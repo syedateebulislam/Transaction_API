@@ -56,3 +56,6 @@ http://localhost:8083/paymentsapi/initiate-payment/paymentrequest
 		"creditorAccountNum": 100789
 	}
 }
+
+##### Original Tutorial/Repository for reference -
+https://github.com/givanthak/spring-boot-rest-api-tutorial
