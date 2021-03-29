@@ -25,15 +25,14 @@ spring.jpa.hibernate.ddl-auto = update
 The app will start running at <http://localhost:8083>.
 
 ## Explore Rest APIs
-Sample templates & URL:
 
-### GET(Find All Payments)-
+#### GET(Find All Payments)-
 http://localhost:8083/paymentsapi/initiate-payment/payments
 
-### GET(Find Payment using Transaction Id)-
+#### GET(Find Payment using Transaction Id)-
 http://localhost:8083/paymentsapi/initiate-payment/payments/transactionId
 
-### POST(Create Single Payment)
+#### POST(Create Single Payment)
 http://localhost:8083/paymentsapi/initiate-payment/paymentrequest
 
 #### JSON POST Template -
