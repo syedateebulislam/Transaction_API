@@ -7,12 +7,17 @@ Set mysql username and password.
 Create database hibernatedb.
 
 ## 2.Create and Setup application.properties file at src/main/resources/application.properties
+
 server.port=8083
+
 spring.datasource.url = jdbc:mysql://localhost:3306/hibernatedb?useSSL=false
-spring.datasource.username = your username
-spring.datasource.password = your password
+spring.datasource.username = root
+spring.datasource.password = 1723504@Mysql
+
 spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.MySQL5InnoDBDialect
+
 spring.jpa.hibernate.ddl-auto = update
+
 
 ## 3.Run File Application.java(src/main/java/com/app/Application.java)
 The app will start running at <http://localhost:8083>.
