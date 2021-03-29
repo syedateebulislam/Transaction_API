@@ -1,4 +1,4 @@
-# Sample REST CRUD API with Spring Boot, Mysql, JPA and Hibernate 
+# Sample REST-API with Spring Boot, Hibernate and MySql
 
 Transaction_API is a SpringBoot REST-API, implemented using Hibernate and MySql Database.
 This API can be consumed in any Payment app for POC and product flow tests.
