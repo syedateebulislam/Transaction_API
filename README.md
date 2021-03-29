@@ -11,8 +11,10 @@ Create database hibernatedb.
 server.port=8083
 
 spring.datasource.url = jdbc:mysql://localhost:3306/hibernatedb?useSSL=false
-spring.datasource.username = root
-spring.datasource.password = 1723504@Mysql
+
+spring.datasource.username = username
+
+spring.datasource.password = password
 
 spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.MySQL5InnoDBDialect
 
