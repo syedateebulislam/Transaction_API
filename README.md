@@ -1,52 +1,41 @@
-# Sample REST API with Spring Boot, Hibernate and MySql
-
+# Sample REST API with Spring Boot, Hibernate and MySql.
 Transaction_API is a SpringBoot REST-API, implemented using Hibernate and MySql Database & integrated with Swagger-UI.
 This API can be consumed in any Payment app for POC and product flow tests.
 
-
-##1. Create Mysql database
-
+## 1.Install and Setup Mysql database
 Set mysql username and password.
-
 Create database hibernatedb.
 
-
-##2. Create and setup application.properties file at src/main/resources/application.properties
+## 2.Create and Setup application.properties file at src/main/resources/application.properties
 
 server.port=8083
 
 spring.datasource.url = jdbc:mysql://localhost:3306/hibernatedb?useSSL=false
-spring.datasource.username = your username
-spring.datasource.password = your password
+
+spring.datasource.username = username
+
+spring.datasource.password = password
 
 spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.MySQL5InnoDBDialect
 
 spring.jpa.hibernate.ddl-auto = update
 
 
-##3. Run File Application.java(src/main/java/com/app/Application.java)
-
+## 3.Run File Application.java(src/main/java/com/app/Application.java)
 The app will start running at <http://localhost:8083>.
-
 
 ## Explore Rest APIs
 
-Sample templates & URL:
-
-GET(Find All Payments)-
-
+#### GET(Find All Payments)-
 http://localhost:8083/paymentsapi/initiate-payment/payments
 
-GET(Find Payment using Transaction Id)-
-
+#### GET(Find Payment using Transaction Id)-
 http://localhost:8083/paymentsapi/initiate-payment/payments/transactionId
 
-POST(Create Single Payment)
-
+#### POST(Create Single Payment)
 http://localhost:8083/paymentsapi/initiate-payment/paymentrequest
 
-JSON POST Template:-
-
+#### JSON POST Template -
 {
 
 	"transactionId": 101,
@@ -68,7 +57,9 @@ JSON POST Template:-
 	}
 }
 
-
-Swagger is also integrated with this project at below url-
-
+#### Swagger url-
 http://localhost:8083/swagger-ui.html
+
+
+##### Original Tutorial/Repository for reference -
+https://github.com/givanthak/spring-boot-rest-api-tutorial
