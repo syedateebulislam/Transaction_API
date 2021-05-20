@@ -1,6 +1,6 @@
 # Sample REST API with Spring Boot, Hibernate and MySql
 
-Transaction_API is a SpringBoot REST-API, implemented using Hibernate and MySql Database.
+Transaction_API is a SpringBoot REST-API, implemented using Hibernate and MySql Database & integrated with Swagger-UI.
 This API can be consumed in any Payment app for POC and product flow tests.
 
 
@@ -67,3 +67,8 @@ JSON POST Template:-
 		"creditorAccountNum": 100789
 	}
 }
+
+
+Swagger is also integrated with this project at below url-
+
+http://localhost:8083/swagger-ui.html
